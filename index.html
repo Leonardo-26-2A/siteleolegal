@@ -13,47 +13,124 @@
     <main>
         <section>
             <h2>Escolha Seus Componentes</h2>
-            <form>
+            <form id="computer-form">
                 <label for="processador">Processador:</label>
                 <select id="processador" name="processador">
-                    <option value="intel-i7">Intel i7</option>
-                    <option value="amd-ryzen7">AMD Ryzen 7</option>
+                    <option value="intel-i7" data-price="3000">Intel i7 - R$3000</option>
+                    <option value="amd-ryzen7" data-price="2800">AMD Ryzen 7 - R$2800</option>
+                    <option value="intel-i5" data-price="1800">Intel i5 - R$1800</option>
+                    <option value="amd-ryzen5" data-price="1600">AMD Ryzen 5 - R$1600</option>
+                    <option value="intel-i9" data-price="4000">Intel i9 - R$4000</option>
                 </select>
 
                 <label for="placaMae">Placa Mãe:</label>
                 <select id="placaMae" name="placaMae">
-                    <option value="asus">ASUS</option>
-                    <option value="msi">MSI</option>
+                    <option value="asus" data-price="600">ASUS - R$600</option>
+                    <option value="msi" data-price="550">MSI - R$550</option>
+                    <option value="gigabyte" data-price="500">Gigabyte - R$500</option>
+                    <option value="asrock" data-price="450">ASRock - R$450</option>
+                    <option value="biostar" data-price="400">Biostar - R$400</option>
                 </select>
 
                 <label for="memoria">Memória RAM:</label>
                 <select id="memoria" name="memoria">
-                    <option value="16gb">16GB</option>
-                    <option value="32gb">32GB</option>
+                    <option value="16gb" data-price="800">16GB - R$800</option>
+                    <option value="32gb" data-price="1200">32GB - R$1200</option>
+                    <option value="8gb" data-price="400">8GB - R$400</option>
+                    <option value="64gb" data-price="2400">64GB - R$2400</option>
+                    <option value="128gb" data-price="4800">128GB - R$4800</option>
                 </select>
 
                 <label for="placaVideo">Placa de Vídeo:</label>
                 <select id="placaVideo" name="placaVideo">
-                    <option value="nvidia-rtx3060">NVIDIA RTX 3060</option>
-                    <option value="amd-rx6700">AMD RX 6700</option>
+                    <option value="nvidia-rtx3060" data-price="2500">NVIDIA RTX 3060 - R$2500</option>
+                    <option value="amd-rx6700" data-price="2300">AMD RX 6700 - R$2300</option>
+                    <option value="nvidia-rtx3070" data-price="3500">NVIDIA RTX 3070 - R$3500</option>
+                    <option value="amd-rx6800" data-price="4000">AMD RX 6800 - R$4000</option>
+                    <option value="nvidia-gtx1650" data-price="1200">NVIDIA GTX 1650 - R$1200</option>
                 </select>
 
                 <label for="armazenamento">Armazenamento:</label>
                 <select id="armazenamento" name="armazenamento">
-                    <option value="ssd-1tb">SSD 1TB</option>
-                    <option value="hdd-2tb">HDD 2TB</option>
+                    <option value="ssd-1tb" data-price="700">SSD 1TB - R$700</option>
+                    <option value="hdd-2tb" data-price="400">HDD 2TB - R$400</option>
+                    <option value="ssd-512gb" data-price="400">SSD 512GB - R$400</option>
+                    <option value="hdd-4tb" data-price="800">HDD 4TB - R$800</option>
+                    <option value="ssd-nvme-1tb" data-price="900">SSD NVMe 1TB - R$900</option>
+                </select>
+
+                <label for="mouse">Mouse:</label>
+                <select id="mouse" name="mouse">
+                    <option value="gaming" data-price="150">Mouse Gamer - R$150</option>
+                    <option value="office" data-price="50">Mouse Office - R$50</option>
+                    <option value="wireless" data-price="100">Mouse Sem Fio - R$100</option>
+                    <option value="ergonomico" data-price="120">Mouse Ergonômico - R$120</option>
+                    <option value="pad" data-price="200">Mouse Pad Gamer - R$200</option>
+                </select>
+
+                <label for="teclado">Teclado:</label>
+                <select id="teclado" name="teclado">
+                    <option value="mecanico" data-price="300">Teclado Mecânico - R$300</option>
+                    <option value="membrana" data-price="100">Teclado de Membrana - R$100</option>
+                    <option value="gamer" data-price="250">Teclado Gamer - R$250</option>
+                    <option value="compacto" data-price="150">Teclado Compacto - R$150</option>
+                    <option value="iluminado" data-price="200">Teclado Iluminado - R$200</option>
+                </select>
+
+                <label for="fone">Fone de Ouvido:</label>
+                <select id="fone" name="fone">
+                    <option value="gamer" data-price="200">Fone Gamer - R$200</option>
+                    <option value="in-ear" data-price="80">Fone In-Ear - R$80</option>
+                    <option value="bluetooth" data-price="150">Fone Bluetooth - R$150</option>
+                    <option value="over-ear" data-price="300">Fone Over-Ear - R$300</option>
+                    <option value="sem-fio" data-price="250">Fone Sem Fio - R$250</option>
+                </select>
+
+                <label for="webcam">Webcam:</label>
+                <select id="webcam" name="webcam">
+                    <option value="hd" data-price="250">Webcam HD - R$250</option>
+                    <option value="full-hd" data-price="400">Webcam Full HD - R$400</option>
+                    <option value="4k" data-price="600">Webcam 4K - R$600</option>
+                    <option value="portatil" data-price="300">Webcam Portátil - R$300</option>
+                    <option value="com-microfone" data-price="350">Webcam com Microfone - R$350</option>
                 </select>
 
                 <button type="submit">Montar Computador</button>
             </form>
+
+            <div id="resultado" style="margin-top: 20px;"></div>
         </section>
         <section>
             <h2>Configurações Recomendadas</h2>
             <p>Para um desempenho ideal, escolha um processador potente e uma placa de vídeo de última geração.</p>
+            <h3>Jogos Recomendados:</h3>
+            <ul>
+                <li>Cyberpunk 2077</li>
+                <li>Call of Duty: Warzone</li>
+                <li>Fortnite</li>
+                <li>Valorant</li>
+                <li>League of Legends</li>
+            </ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Monte Seu Computador. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.getElementById('computer-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let total = 0;
+            const selects = this.querySelectorAll('select');
+
+            selects.forEach(select => {
+                const selectedOption = select.options[select.selectedIndex];
+                total += parseFloat(selectedOption.getAttribute('data-price'));
+            });
+
+            document.getElementById('resultado').innerHTML = `<h3>Preço Total: R$${total.toFixed(2)}</h3>`;
+        });
+    </script>
 </body>
 </html>
